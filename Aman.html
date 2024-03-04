@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#EEF5FF] text-[#200E3A]" >
+  <div class="main h-screen w-full bg-white-200 font-['gilroy']">
+    <div class="container relative  h-screen mx-auto ">
+        <div class="navbaar flex items-center justify-between w-full py-3 px-4 ">
+            
+            <select class="bg-[#EEF5FF] text-[#200E3A]" id="pages" onchange="activateRadio()">
+                <!-- Added 'onchange' attribute to call the activateRadio function -->
+                <option value="Aman.html" data-radio="amanRadio">Aman.Chaudhary</option>
+                <option value="index.html" data-radio="tusharRadio">Tushar.Kashyap</option>
+               
+                <option value="Rohit.html" data-radio="rohitRadio">Rohit.Kumar</option> <!-- Added .html extension -->
+                <option value="Pawan.html" data-radio="pawanRadio">Pawan.Kumar</option> <!-- Added .html extension -->
+            </select>
+            <div class="links hidden lg:flex lg:gap-8">
+                <a class="text-sm " href="#">Home</a>
+                <a class="text-sm opacity-50" href="#">About</a>
+                <a class="text-sm opacity-50" href="#">Content</a>
+                <a class="text-sm opacity-50" href="#">Courses</a>
+                </div>
+                <a class="lg:hidden" href="index.html"> <i class="ri-home-4-line lg:hidden text-2xl"></i></a>
+        </div>
+
+        <div class=" absolute top-1/2 left-1/2 -translate-x-[50%] -translate-y-[50%] w-full flex flex-col items-center " >
+            <div class="image w-44 h-44 lg:w-48 lg:h-48 rounded-full bg-red-200 overflow-hidden">
+                <img class="h-full w-full object-cover " src="./aman.jpg" alt="">
+            </div>
+            <h3 class="font-bold text-xl lg:text-2xl mt-4" >Hii, i am <span class="text-amber-600" >Aman</span>👋</h3>
+            <h1 class="text-[11vw] lg:text-5xl font-semibold lg:font-semibold text-center  mt-4 leading-none w-11/12 tracking-tight" >Connection Drives <span class="text-red-700" >Software</span> Engineering <span class="text-red-700">Progress</span>.</h1>
+            <p class=" text-lg text-center w-3/4 text-s font-semibold lg:text-lg lg:opacity-50 mt-4" >Expert <a href="./java.pdf" download="">Java</a> developer crafting innovative solutions, excelling in web development and competitive programming environments. </p>
+           <div class="flex gap-3">
+            <a href="https://www.instagram.com/amanchaudhary._.65?igsh=bm0wemYzcmRxZ2s2"><button class="px-4 py-2 lg:px-6 lg:py-2 bg-black text-white rounded-full text-xs lg:text-lg tracking-tight mt-7">Connect on Instagram</button>
+            </a>
+            <a href="https://github.com/AmanChaudhary001"><button class="px-4 py-2 lg:px-6 lg:py-2 bg-black text-white rounded-full text-xs lg:text-lg tracking-tight mt-7">Connect on Github</button>
+            </a>
+
+           </div>
+        </div>
+    </div>
+  </div>
+  <script>
+
+    
+    document.addEventListener("DOMContentLoaded", function() {
+        const selectElement1 = document.querySelector('#pages');
+    
+        selectElement1.addEventListener('change', (event) => {
+            const value = event.target.value;
+            window.location.href = value;
+        });
+    });
+    
+  </script>
+</body>
+</html>

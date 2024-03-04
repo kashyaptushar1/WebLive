@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-[#EEF5FF] text-[#200E3A]">
+    <div class="main h-screen w-full bg-white-200 font-['gilroy']">
+      <div class="container relative h-screen mx-auto">
+        <div class="navbaar flex items-center justify-between w-full py-3 px-4">
+          <select
+            class="bg-[#EEF5FF] text-[#200E3A]"
+            id="pages"
+            onchange="activateRadio()"
+          >
+            <!-- Added 'onchange' attribute to call the activateRadio function -->
+            <option value="Pawan.html" data-radio="pawanRadio">
+              Pawan.Kumar
+            </option>
+            <option value="index.html" data-radio="tusharRadio">
+              Tushar.Kashyap
+            </option>
+            <option value="Aman.html" data-radio="amanRadio">
+              Aman.chaudhary
+            </option>
+            <option value="Rohit.html" data-radio="rohitRadio">
+              Rohit.Kumar
+            </option>
+            <!-- Added .html extension -->
+            <!-- Added .html extension -->
+          </select>
+          <div class="links hidden lg:flex lg:gap-8">
+            <a class="text-sm" href="#">Home</a>
+            <a class="text-sm opacity-50" href="#">About</a>
+            <a class="text-sm opacity-50" href="#">Content</a>
+            <a class="text-sm opacity-50" href="#">Courses</a>
+          </div>
+          <a class="lg:hidden" href="index.html">
+            <i class="ri-home-4-line lg:hidden text-2xl"></i
+          ></a>
+        </div>
+
+        <div
+          class="absolute top-1/2 left-1/2 -translate-x-[50%] -translate-y-[50%] w-full flex flex-col items-center"
+        >
+          <div
+            class="image w-44 h-44 lg:w-48 lg:h-48 rounded-full bg-red-200 overflow-hidden"
+          >
+            <img class="h-full w-full object-cover" src="./pawan.jpg" alt="" />
+          </div>
+          <h3 class="font-bold text-lg lg:text-2xl mt-4">Hii, i am Pawan👋</h3>
+          <h1
+            class="text-4xl lg:text-5xl font-semibold lg:font-semibold text-center mt-4 leading-none w-3/4 tracking-tight"
+          >
+            Cyber <span class="text-red-700">Warriors</span> Unite,
+            Safeguarding <span class="text-red-700">Digital</span> Fortresses.
+          </h1>
+          <p
+            class="text-center w-3/4 text-s font-semibold lg:text-lg lg:opacity-50 mt-4"
+          >
+            Cybersecurity Specialist Crafting Secure Digital Environments
+            Through Advanced Protocols and Vigilant Monitoring.
+          </p>
+          <div class="flex gap-3">
+            <a
+              href="https://www.instagram.com/itz_pawan_alone_?igsh=MWVqdjl3OXFraHRlcg=="
+              ><button
+                class="px-4 py-2 lg:px-6 lg:py-2 bg-black text-white rounded-full text-xs lg:text-lg tracking-tight mt-7"
+              >
+                Connect on Instagram
+              </button>
+            </a>
+            <a href="javascript:checkName();">
+              <button
+                class="px-4 py-2 lg:px-6 lg:py-2 bg-black text-white rounded-full text-xs lg:text-lg tracking-tight mt-7"
+              >
+                Play with me
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const selectElement1 = document.querySelector("#pages");
+
+        selectElement1.addEventListener("change", (event) => {
+          const value = event.target.value;
+          window.location.href = value;
+        });
+      });
+
+      function checkName() {
+        let name = prompt("Enter your name:");
+        if (name && name.trim().toUpperCase() === "VANSHIKA") {
+
+          alert(
+            "Hello! CR, You are good student of your class according to my Programmer.🙂"
+          );
+        } else if (name && name.trim().toUpperCase() === "TUSHAR") {
+
+          alert("Hello Tushar Kashyap, welcome, I know you are my Developer😘");
+        } else if (name && name.trim().toUpperCase() === "SAHIL") {
+
+          alert("Hello, Marval Fan.");
+        } else if (name && name.trim().toUpperCase() === "NEHA") {
+
+          alert(
+            "Hello Neha,Stop giving answer in the class if you not know the correct😂 ."
+          );
+        } else if (name && name.trim().toUpperCase() === "PRACHI") {
+
+          alert("Hello advocate 👩‍⚖️ .");
+        } else if (name && name.trim().toUpperCase() === "VEDPRAKASH") {
+
+          alert("Hello VED, iss baar back tho nhi aaegi😂");
+        } else if (name && name.trim().toUpperCase() === "NISHANT") {
+
+          alert("Hello Nishant, How are Narmatha and Muskan😂 ");
+        } else if (name && name.trim().toUpperCase() === "ANKIT") {
+
+          alert("Hello Sneha, Sorry Ankit😂 ");
+        } 
+        else if (name && name.trim().toUpperCase() === "VASUNDHARA") {
+  
+            alert("Neha be like: Vasundharaaaaaaaaaaa 😂 ");
+          }
+        else if (name && name.trim().toUpperCase() === "PRADEEP") {
+  
+            alert("Hello Pradeep, You are Special friend of my programmer💕");
+          }
+        else if (name && name.trim().toUpperCase() === "AASHISH") {
+  
+            alert("Hello Aashish , Focuse on reading not writting  📚");
+          }
+        else if (name && name.trim().toUpperCase() === "SWATI") {
+  
+            alert("Hello Doramii (=◕ᆽ◕ฺ=)");
+          }
+        else if (name && name.trim().toUpperCase() === "SWATI") {
+  
+            alert("Hello Doramii (=◕ᆽ◕ฺ=)");
+          }
+        else if (name && name.trim().toUpperCase() === "ISHA") {
+  
+            alert("Hello Goswami, Sorry isha 🙏");
+          }
+        else if (name && name.trim().toUpperCase() === "RAJKUMAR") {
+  
+            alert("Hello Rajkumar Uncle! Ab vandana aunty ka kya hoga?🤔");
+          }
+        else if (name && name.trim().toUpperCase() === "RAMNIWAS") {
+  
+            alert("Hello Ranveer, Aap B.tech se B.sc(M) mai kb aae😂😁");
+          }
+        else if (name && name.trim().toUpperCase() === "NIKITA") {
+  
+            alert("Hello ma'am, you are such a good teacher of computer science🙏");
+          }
+        else if (name && name.trim().toUpperCase() === "VANDANA") {
+  
+            alert("Hello ma'am , We are gatting your Point🙂");
+          }
+        else if (name && name.trim().toUpperCase() === "ROHIT") {
+  
+            alert("Kya haal akpe W ke😂");
+          }
+        else if (name && name.trim().toUpperCase() === "PAWAN") {
+  
+            alert("Hello owner! I want to buy your brand.");
+          }
+        else if (name && name.trim().toUpperCase() === "PAWAN") {
+  
+            alert("Hello owner! I want to buy your brand.");
+          }
+        else if (name && name.trim().toUpperCase() === "GUDDU") {
+  
+            alert("Guddu is the love of my programmer but i do'nt know what is the real name of guddu , my programmer disscuse all time about guddu bhai and say she is the most beautifull girl he ever seen🥰.");
+          }
+          else {
+          alert("Hello" + " " + name + ", " + "How are you?");
+        }
+      }
+    </script>
+  </body>
+</html>
